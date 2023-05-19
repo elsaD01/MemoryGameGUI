@@ -18,23 +18,23 @@ import java.util.List;
 
 
             cards = new ArrayList<>();
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Ingrid.jpg", "Ingrid"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Ingrid.jpg", "Ingrid"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Signe.jpg", "Signe"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Signe.jpg", "Signe"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Sumaia.jpg", "Sumaia"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Sumaia.jpg", "Sumaia"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Tobias.jpg", "Tobias"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Tobias.jpg", "Tobias"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cyrine.JPG", "Cyrine"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cyrine.JPG", "Cyrine"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Ailin.jpg", "Ailin"));
-            cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/Ailin.jpg", "Ailin"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Ingrid.jpg", "Ingrid"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Ingrid.jpg", "Ingrid"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Signe.jpg", "Signe"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Signe.jpg", "Signe"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Sumaia.jpg", "Sumaia"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Sumaia.jpg", "Sumaia"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Tobias.jpg", "Tobias"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Tobias.jpg", "Tobias"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cyrine.JPG", "Cyrine"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cyrine.JPG", "Cyrine"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Ailin.jpg", "Ailin"));
+            cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/Ailin.jpg", "Ailin"));
 
             // Shuffle cards
             Collections.shuffle(cards);
 
-            ImageIcon cardback = new ImageIcon("/Users/elsa/Downloads/MemoryGameGUI-1-master/baggrundpeople.jpg");
+            ImageIcon cardback = new ImageIcon("/Users/elsa/Desktop/MemoryGameGUI/baggrundpeople.jpg");
 
             cardButtons = new JButton[4][3];
             for (int i = 0; i < cardButtons.length; i++) {
@@ -119,7 +119,7 @@ import java.util.List;
                 if (cards.get(i).cardFlipped) {
                     button.setIcon(new ImageIcon(cards.get(i).getPicture()));
                 } else {
-                    button.setIcon(new ImageIcon("/Users/elsa/Downloads/MemoryGameGUI-1-master/baggrundpeople.jpg"));
+                    button.setIcon(new ImageIcon("/Users/elsa/Desktop/MemoryGameGUI/baggrundpeople.jpg"));
                 }
             }
         }

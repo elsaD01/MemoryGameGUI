@@ -19,23 +19,23 @@ public class Animal extends JPanel {
 
 
         cards = new ArrayList<>();
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/lion.jpg", "lion"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/lion.jpg", "lion"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/pig.jpg", "pig"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/pig.jpg", "pig"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/sheep.jpg", "Sheep"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/sheep.jpg", "Sheep"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/dog.jpg", "dogs"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/dog.jpg", "dogs"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cat.jpg", "cat"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cat.jpg", "cat"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cow.jpg", "cow"));
-        cards.add(new Card("/Users/elsa/Downloads/MemoryGameGUI-1-master/cow.jpg", "cow"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/lion.jpg", "lion"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/lion.jpg", "lion"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/pig.jpg", "pig"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/pig.jpg", "pig"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/sheep.jpg", "Sheep"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/sheep.jpg", "Sheep"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/dog.jpg", "dogs"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/dog.jpg", "dogs"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cat.jpg", "cat"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cat.jpg", "cat"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cow.jpg", "cow"));
+        cards.add(new Card("/Users/elsa/Desktop/MemoryGameGUI/cow.jpg", "cow"));
 
         // Shuffle cards
         Collections.shuffle(cards);
 
-        ImageIcon cardback = new ImageIcon("/Users/elsa/Downloads/MemoryGameGUI-1-master/download_4.jpg");
+        ImageIcon cardback = new ImageIcon("/Users/elsa/Desktop/MemoryGameGUI/download_4.jpg");
 
         cardButtons = new JButton[4][3];
         for (int i = 0; i < cardButtons.length; i++) {
@@ -121,7 +121,7 @@ public class Animal extends JPanel {
             if (cards.get(i).cardFlipped) {
                 button.setIcon(new ImageIcon(cards.get(i).getPicture()));
             } else {
-                button.setIcon(new ImageIcon("/Users/elsa/Downloads/MemoryGameGUI-1-master/download_4.jpg"));
+                button.setIcon(new ImageIcon("/Users/elsa/Desktop/MemoryGameGUI/download_4.jpg"));
             }
         }
     }
